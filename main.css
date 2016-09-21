@@ -1,3 +1,286 @@
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+   background: #DADADA;
+}
 h1 {
     color: red;
 }
+.bl-background {
+    
+   width:100%;
+}
+.center{
+    padding-top:100px;
+    width:100%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+.bl-list {  
+    border-radius: 3px;
+    background: white;
+    width:700px;
+    margin-left: 70px;
+    float: left;
+    
+    
+    
+}
+
+.add-product{
+    /*padding: 10px;*/
+    
+    padding: 10px;
+    
+}
+.new-item-in{
+    height: 30px;
+}
+.b-in-product{
+    padding: 0;
+    height: 100%;
+    width:15%;
+    border: 0;
+    float:right;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #2185D0;
+    margin-left: 0;
+    color: white;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.in-product{
+    height: 100%;
+    width: 85%;  
+    border: 1% solid;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(34, 36, 38, 0.14902);
+     padding: 0;
+    box-sizing: border-box;
+}
+
+/*Кнопки*/
+.bl-label {
+    background: #E8E8E8;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    
+}
+.bl-plus {
+    background: #04a613;
+    border-radius: 50%;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.bl-minus{
+    background: #DB2828;
+    border-radius: 50%;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 20px;
+}
+hr{
+    margin: 0;
+    background: #DADADA;
+}
+.bl-row{
+    height: 50px;
+    
+}
+
+
+.bl-buttons{
+    width: 25%;
+    height: 100%;
+    float:right;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+.b-bought{
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+    font-size: 11px;
+    background-color: #E8E8E8;
+}
+
+.b-x{
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: white;
+    background-color: #DB2828;
+}
+.bl-count{
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+.bl-product{
+    width: 25%;
+    line-height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+   
+}
+.bl-bought {
+    background: white;
+    width: 300px;
+    margin-right: 85px;
+    float: right;
+    border-radius: 3px;
+    
+}
+.bl-title{
+    padding: 14px;
+    font-size: 19px
+}
+.list-pnames{
+    padding: 10px;
+    
+    
+}
+.nlist-pnames{
+    height: 10px;
+}
+.box-prod-count{     
+    display: inline-block;
+    background-color: #E8E8E8;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    margin-bottom: 3px; 
+}
+
+.prod-counter{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+}
+/*
+.sticker{
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: -100px;
+    left: 10px;
+    background-color: darkviolet;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 300ms ease;
+}
+
+.sticker:hover{
+    /* Коли bottom, top margin і тд, то transform
+    transform: translateY(-100px);
+   
+    background-color: mediumvioletred;
+}
+
+
+.buylist{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.whoname{
+    font-size: 30px;
+    margin-top: 30px; 
+}
+*/
+
+@media (max-width: 1070px){
+    .bl-bought{
+        margin: 0;
+        
+        width: 100%;
+        float:none;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+    .bl-list{
+        
+        margin: 0;
+        
+        width: 100%;
+        float:none;
+    }
+}
+/*
+@media print{
+    .sticker{
+        background: white;
+        color: black;
+        border: 3px solid black;
+        
+}
+    .buylist{
+        display: none;
+    }
+    .whoname{
+        margin-top: 0;
+    }
+}
+
+
+
+button{
+    position: relative;
+}
+
+button::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 20px;
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    
+    transform: scale(0);
+    transform-origin: 50% 100%;
+   transition: all 300ms ease;
+    
+}
+button:hover::before{
+    display: block;
+     
+    transform: scale(1);
+}
+*/
