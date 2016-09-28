@@ -187,7 +187,7 @@ hr{
     border-radius: 50%;
     color: white;
 }
-/*
+
 .sticker{
     width: 150px;
     height: 150px;
@@ -204,7 +204,7 @@ hr{
 }
 
 .sticker:hover{
-    /* Коли bottom, top margin і тд, то transform
+    /* Коли bottom, top margin і тд, то transform */
     transform: translateY(-100px);
    
     background-color: mediumvioletred;
@@ -216,11 +216,17 @@ hr{
     font-weight: bold;
 }
 
+.created-by{
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
 .whoname{
     font-size: 30px;
-    margin-top: 30px; 
+    text-align: left;
+    
 }
-*/
+
 
 @media (max-width: 1070px){
     .bl-bought{
@@ -228,7 +234,7 @@ hr{
         
         width: 100%;
         float:none;
-        box-sizing: border-box;
+        
         margin-top: 20px;
     }
     .bl-list{
@@ -239,7 +245,7 @@ hr{
         float:none;
     }
 }
-/*
+
 @media print{
     .sticker{
         background: white;
@@ -250,7 +256,7 @@ hr{
     .buylist{
         display: none;
     }
-    .whoname{
+    .created-by{
         margin-top: 0;
     }
 }
@@ -272,10 +278,11 @@ button::before{
     display: block;
     background-color: blueviolet;
     color: white;
-    
+    border-radius: 5px;
     transform: scale(0);
     transform-origin: 50% 100%;
    transition: all 300ms ease;
+    font-size: 17px;
     
 }
 button:hover::before{
@@ -283,4 +290,3 @@ button:hover::before{
      
     transform: scale(1);
 }
-*/
