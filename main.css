@@ -1,6 +1,6 @@
 body{
-    margin-left: 10px;
-    margin-right: 10px;
+    
+   
    background: #DADADA;
 }
 h1 {
@@ -21,10 +21,11 @@ h1 {
 .bl-list {  
     border-radius: 3px;
     background: white;
-    width:700px;
+    width:60%;
     margin-left: 70px;
     float: left;
-    
+    box-sizing: border-box;
+    margin-left: 10px;
     
     
 }
@@ -93,6 +94,11 @@ h1 {
     color: white;
     font-size: 20px;
 }
+
+.minus-disable{
+    opacity: 0.5;
+    
+}
 hr{
     margin: 0;
     background: #DADADA;
@@ -107,27 +113,30 @@ hr{
     width: 25%;
     height: 100%;
     float:right;
-    text-align: right;
     line-height: 50px;
-    padding-right: 10px;
     box-sizing: border-box;
+    text-align: right;
+    
 
 }
 .b-bought{
-    height: 30px;
-    width: 80px;
+    height: 60%;
+    width: 55%;
     border-radius: 3px;
     font-size: 11px;
     background-color: #E8E8E8;
+    box-sizing: border-box;
 }
 
 .b-x{
-    height: 30px;
-    width: 30px;
+    height: 60%;
+    width: 20%;
     border-radius: 3px;
     font-size: 11px;
     color: white;
     background-color: #DB2828;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
 .bl-count{
     width: 50%;
@@ -144,14 +153,64 @@ hr{
     box-sizing: border-box;
    
 }
+
+.rename-prod{
+    width: 70%;
+    box-sizing: border-box;
+}
+.state-non-rename .rename-prod{
+    display: none;
+}
+
+.state-rename .name-prod{
+    display: none;
+}
 .bl-bought {
     background: white;
-    width: 300px;
+    width: 30%;
     margin-right: 85px;
     float: right;
     border-radius: 3px;
+     margin-right: 10px;
+    box-sizing: border-box;
     
 }
+
+.unbought{
+     height: 60%;
+    width: 55%;
+    border-radius: 3px;
+    font-size: 11px;
+    background-color: #E8E8E8;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.state-not-bought .unbought{
+    display: none;
+    
+}
+.state-bought .b-bought{
+   display: none;
+    
+}
+.state-bought .b-x{
+   display: none;
+    
+}
+.state-bought .bl-plus{
+   display: none;
+    
+}
+.state-bought .bl-minus{
+   display: none;
+    
+}
+
+.state-bought .bl-product{
+    text-decoration: line-through;
+}
+
 .bl-title{
     padding: 14px;
     font-size: 19px
@@ -162,7 +221,7 @@ hr{
     
 }
 .nlist-pnames{
-    height: 10px;
+    padding: 10px;
 }
 .box-prod-count{     
     display: inline-block;
@@ -174,7 +233,10 @@ hr{
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 2px;
-    margin-bottom: 3px; 
+    margin-bottom: 3px;
+    margin-right: 5px;
+    
+    
 }
 
 .prod-counter{
@@ -186,6 +248,11 @@ hr{
     background-color: orange;
     border-radius: 50%;
     color: white;
+    
+}
+
+.cross{
+    text-decoration: line-through;
 }
 
 .sticker{
@@ -228,7 +295,7 @@ hr{
 }
 
 
-@media (max-width: 1070px){
+@media (max-width: 500px){
     .bl-bought{
         margin: 0;
         

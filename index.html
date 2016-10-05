@@ -14,79 +14,22 @@
             <div class="add-product">
                 <div class="new-item-in">
                     <button class="b-in-product" data-ToolTip="Додати">Додати</button>
-                <input class="in-product" type="text" >
-                
-            </div>         
-                                                                      
+                    <input class="in-product"  type="text"  >
+            </div>                                                                           
             </div>
-            <hr>
-            <div class="bl-row">
-                
-                 <div class="bl-buttons">
-                     <button class="b-bought" data-ToolTip="Куплено">Куплено</button>
-                 <button class="b-x" data-ToolTip="Видалити">x</button>
-            </div>
-                <div class="bl-count">
-                    <button class="bl-minus" data-ToolTip="Відняти">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-ToolTip="Додати">+</button>
-                </div>
-                <div class="bl-product">
-                    Помідори
-                </div>
-                
-           
-             </div>
-             <hr>
-             <div class="bl-row">
-                
-                 <div class="bl-buttons">
-                     <button class="b-bought" data-ToolTip="Куплено">Куплено</button>
-                 <button class="b-x" data-ToolTip="Видалити">x</button>
-            </div>
-                <div class="bl-count">
-                    <button class="bl-minus" data-ToolTip="Відняти">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-ToolTip="Додати">+</button>
-                </div>
-                <div class="bl-product">
-                    Печиво
-                </div>
-                
-           
-                    </div>
-             <hr>
-             <div class="bl-row">
-                
-                 <div class="bl-buttons">
-                     <button class="b-bought" data-ToolTip="Куплено">Куплено</button>
-                 <button class="b-x" data-ToolTip="Видалити">x</button>
-            </div>
-                <div class="bl-count">
-                    <button class="bl-minus" data-ToolTip="Відняти">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-ToolTip="Додати">+</button>
-                </div>
-                <div class="bl-product">
-                    Помідори
-                </div>
-                
-           
-                    </div>
-             
             </div>
         <div class="bl-bought">
             <div class="bl-title">Залишилося</div>
             <hr>
             <div class="list-pnames">
-                <div class="box-prod-count"><span><span>Помідори</span><span class="prod-counter">1</span></span></div>
-                <div class="box-prod-count"><span><span>Печиво</span><span class="prod-counter">1</span></span></div>
-                <div class="box-prod-count"><span><span>Сир</span><span class="prod-counter">4</span></span></div>
+                
             </div>
             <hr>
             <div class="bl-title">Куплено</div>
             <hr>
-            <div class="nlist-pnames"></div>
+            <div class="nlist-pnames">
+                
+            </div>
         </div>
        
         
@@ -101,5 +44,34 @@
         </div>
     </div>
     
+    <div class="block-template" style="display:none">
+         <div class="box-prod-count"><span><span class = "box-name-prod">Помідори</span><span class="prod-counter">1</span></span></div>
+    </div>
+     <div class="row-template" style="display:none">
+        <hr>
+    <div class="bl-row">
+                
+                 <div class="bl-buttons">
+                     <button class="b-bought" data-ToolTip="Купити">Куплено</button>
+                     <button class="unbought" data-ToolTip="Не куплено">Не куплено</button>
+                 <button class="b-x" data-ToolTip="Видалити">x</button>
+                     
+            </div>
+                <div class="bl-count">
+                    <button class="bl-minus" data-ToolTip="Відняти">-</button>
+                    <span class="bl-label" >3</span>
+                    <button class="bl-plus" data-ToolTip="Додати">+</button>
+                </div>
+                <div class="bl-product">
+                    <span class="name-prod">Помідори</span>
+                    <input class="rename-prod" type="text">
+                </div>
+                
+           
+             </div>
+        
+        </div>
+      <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
+<script	type="text/javascript" src="main.js">	</script>
 </body>
 </html>
